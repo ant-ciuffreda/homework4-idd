@@ -42,4 +42,4 @@ Scadenza: invio della presentazione entro le 18:00 del 19 novembre 2026.
 | (nome1) | Dati e indicizzazione, test di prestazioni | `prepara_dati.py`, `indicizza.py` |
 | (nome2) | Ricerca, analyzer, valutazione della qualità | `ricerca.py`, cartella `test/` |
 | (nome3) | Interfaccia web, test funzionali | `app.py`, `templates/` |
-Tutti: presentazione, README e prove della demo.
+Tutti | presentazione, README e prove della demo.
