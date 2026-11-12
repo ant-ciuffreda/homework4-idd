@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.vscode/
+data/itwikinews_namespace_0_0.ndjson
+data/*.tar.gz
