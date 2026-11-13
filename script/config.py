@@ -5,8 +5,8 @@ from elasticsearch import Elasticsearch
 load_dotenv()
 
 NOME_INDICE = "wikinews-it"
+FILE_COMPRESSO = "data/itwikinews-NS0-20250320-ENTERPRISE-HTML.json.tar.gz"
 FILE_DUMP = "data/itwikinews_namespace_0_0.ndjson"
-FILE_CAMPIONE = "data/campione.ndjson"
 FILE_ARTICOLI = "data/articoli.jsonl"
 CAMPI = ["id", "titolo", "testo", "categorie", "data", "url"]
 
