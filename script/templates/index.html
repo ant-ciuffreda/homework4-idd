@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <title>Ricerca Wikinews</title>
+</head>
+<body>
+  <h1>Ricerca nelle notizie di Wikinews</h1>
+  <form method="get" action="/">
+    <input type="text" name="q" value="{{ testo }}" placeholder="Cerca...">
+    <button type="submit">Cerca</button>
+  </form>
+
+  {% if risposta %}
+    <p>Risultati trovati: {{ risposta.totale }}</p>
+    {% for r in risposta.risultati %}
+      <div>
+        <h3><a href="{{ r.url }}">{{ r.titolo }}</a></h3>
+        <p>{{ r.data }}</p>
+        <p>{{ r.estratto }}</p>
+      </div>
+    {% endfor %}
+  {% endif %}
+</body>
+</html>
