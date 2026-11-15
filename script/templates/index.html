@@ -2,24 +2,158 @@
 <html lang="it">
 <head>
   <meta charset="utf-8">
-  <title>Ricerca Wikinews</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if testo %}{{ testo }} – {% endif %}Ricerca Wikinews</title>
+  <style>
+    :root {
+      --testo: #1f2328; --tenue: #59636e; --bordo: #d0d7de;
+      --sfondo: #fbfbf7; --accento: #0b57d0; --evidenza: #fff3b0;
+      --errore: #b42318; --avviso: #8a5a00;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      color: var(--testo); background: #fff; line-height: 1.5;
+    }
+    header { border-bottom: 1px solid var(--bordo); background: var(--sfondo); }
+    .contenitore { max-width: 860px; margin: 0 auto; padding: 1rem 1.25rem; }
+    h1 { font-size: 1.4rem; margin: 0 0 .75rem; }
+    h1 a { color: inherit; text-decoration: none; }
+    form .riga { display: flex; gap: .5rem; }
+    input, select, button { font: inherit; }
+    input[type=search] {
+      flex: 1; padding: .55rem .75rem; border: 1px solid var(--bordo); border-radius: 6px;
+    }
+    button {
+      padding: .55rem 1.1rem; border: 0; border-radius: 6px;
+      background: var(--accento); color: #fff; cursor: pointer;
+    }
+    .filtri { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; margin-top: .75rem;
+              font-size: .9rem; color: var(--tenue); align-items: end; }
+    .filtri label { display: flex; flex-direction: column; gap: .2rem; }
+    .filtri select, .filtri input {
+      padding: .35rem .5rem; border: 1px solid var(--bordo); border-radius: 6px; color: var(--testo);
+    }
+    .filtri select { max-width: 16rem; }
+    .azzera { font-size: .9rem; color: var(--tenue); }
+    .suggerimento { font-size: .8rem; color: var(--tenue); margin: .5rem 0 0; }
+    .messaggio { padding: .75rem 1rem; border-radius: 6px; background: var(--sfondo); }
+    .messaggio.errore { background: #fef3f2; color: var(--errore); }
+    .messaggio.avviso { background: #fffaeb; color: var(--avviso); }
+    .conteggio { color: var(--tenue); font-size: .9rem; }
+    ol.risultati { list-style: none; padding: 0; margin: 0; }
+    
+    /* --- Stile card per i risultati --- */
+    ol.risultati li {
+      background: #ffffff;
+      border: 1px solid var(--bordo);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+      transition: box-shadow 0.2s ease;
+    }
+    ol.risultati li:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+    /* ---------------------------------- */
+
+    ol.risultati h2 { font-size: 1.1rem; margin: 0 0 .15rem; font-weight: 600; }
+    ol.risultati h2 a { color: var(--accento); text-decoration: none; }
+    ol.risultati h2 a:hover { text-decoration: underline; }
+    .meta { font-size: .85rem; color: var(--tenue); margin-bottom: .3rem; }
+    .estratto { margin: 0; }
+    .estratto em { font-style: normal; background: var(--evidenza); }
+    nav.pagine { display: flex; justify-content: space-between; align-items: center;
+                 margin: 1.5rem 0; font-size: .95rem; }
+    nav.pagine a { color: var(--accento); text-decoration: none; }
+    nav.pagine .disattivo { color: #afb8c1; }
+  </style>
 </head>
 <body>
-  <h1>Ricerca nelle notizie di Wikinews</h1>
-  <form method="get" action="/">
-    <input type="text" name="q" value="{{ testo }}" placeholder="Cerca...">
-    <button type="submit">Cerca</button>
-  </form>
+  <header>
+    <div class="contenitore">
+      <h1><a href="/">Ricerca nelle notizie di Wikinews</a></h1>
+      <form method="get" action="/">
+        <div class="riga">
+          <input type="search" name="q" value="{{ testo }}" autofocus
+                 placeholder="Es. elezioni europee oppure &quot;Papa Giovanni Paolo II&quot;"
+                 aria-label="Testo da cercare">
+          <button type="submit">Cerca</button>
+        </div>
+        <div class="filtri">
+          <label>Categoria
+            {% if categorie %}
+              <select name="categoria">
+                <option value="">Tutte</option>
+                {% for c in categorie %}
+                  <option value="{{ c }}" {% if c == filtri.categoria %}selected{% endif %}>{{ c }}</option>
+                {% endfor %}
+              </select>
+            {% else %}
+              <input type="text" name="categoria" value="{{ filtri.categoria or '' }}" placeholder="Es. Sport">
+            {% endif %}
+          </label>
+          <label>Dal
+            <input type="date" name="data_da" value="{{ filtri.data_da or '' }}" min="2004-01-01" max="2025-12-31">
+          </label>
+          <label>Al
+            <input type="date" name="data_a" value="{{ filtri.data_a or '' }}" min="2004-01-01" max="2025-12-31">
+          </label>
+          {% if filtri.categoria or filtri.data_da or filtri.data_a %}
+            <a class="azzera" href="{{ url_for('home', q=testo) if testo else '/' }}">Togli i filtri</a>
+          {% endif %}
+        </div>
+        <p class="suggerimento">Metti una frase tra virgolette per cercarla esatta.
+          Con un filtro sulle date si escludono gli articoli senza data.</p>
+      </form>
+    </div>
+  </header>
 
-  {% if risposta %}
-    <p>Risultati trovati: {{ risposta.totale }}</p>
-    {% for r in risposta.risultati %}
-      <div>
-        <h3><a href="{{ r.url }}">{{ r.titolo }}</a></h3>
-        <p>{{ r.data }}</p>
-        <p>{{ r.estratto }}</p>
-      </div>
+  <main class="contenitore">
+    {% for a in avvisi %}
+      <p class="messaggio avviso">{{ a }}</p>
     {% endfor %}
-  {% endif %}
+
+    {% if errore %}
+      <p class="messaggio errore">{{ errore }}</p>
+    {% elif messaggio %}
+      <p class="messaggio">{{ messaggio }}</p>
+    {% endif %}
+
+    {% if risposta and risposta.totale > 0 and risposta.risultati %}
+      <p class="conteggio">
+        {{ "{:,}".format(risposta.totale).replace(",", ".") }}
+        risultat{{ "o" if risposta.totale == 1 else "i" }}
+        {% if pagine_totali > 1 %} · pagina {{ pagina }} di {{ pagine_totali }}{% endif %}
+      </p>
+
+      <ol class="risultati" start="{{ (pagina - 1) * 10 + 1 }}">
+        {% for r in risposta.risultati %}
+          <li>
+            <h2><a href="{{ r.url }}" target="_blank" rel="noopener">{{ r.titolo }}</a></h2>
+            <div class="meta">{{ r.data | data_italiana }}</div>
+            <p class="estratto">{# estratto già sicuro: ricerca.py usa encoder html / html.escape #}{{ r.estratto | safe }}</p>
+          </li>
+        {% endfor %}
+      </ol>
+
+      {% if pagine_totali > 1 %}
+        <nav class="pagine" aria-label="Pagine dei risultati">
+          {% if pagina > 1 %}
+            <a href="{{ url_for('home', pagina=pagina - 1, **parametri) }}">&larr; Pagina precedente</a>
+          {% else %}
+            <span class="disattivo">&larr; Pagina precedente</span>
+          {% endif %}
+          <span>{{ pagina }} / {{ pagine_totali }}</span>
+          {% if pagina < pagine_totali %}
+            <a href="{{ url_for('home', pagina=pagina + 1, **parametri) }}">Pagina successiva &rarr;</a>
+          {% else %}
+            <span class="disattivo">Pagina successiva &rarr;</span>
+          {% endif %}
+        </nav>
+      {% endif %}
+    {% endif %}
+  </main>
 </body>
 </html>
