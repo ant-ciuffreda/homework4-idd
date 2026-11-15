@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if testo %}{{ testo }} – {% endif %}Ricerca Wikinews</title>
-<style>
+  <style>
     :root {
       --testo: #1f2328; --tenue: #59636e; --bordo: #d0d7de;
       --sfondo: #fbfbf7; --accento: #0b57d0; --evidenza: #fff3b0;
@@ -42,8 +42,7 @@
     .messaggio.avviso { background: #fffaeb; color: var(--avviso); }
     .conteggio { color: var(--tenue); font-size: .9rem; }
     ol.risultati { list-style: none; padding: 0; margin: 0; }
-    
-   
+
     ol.risultati li {
       background: #ffffff;
       border: 1px solid var(--bordo);
@@ -52,6 +51,8 @@
       margin-bottom: 1rem;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
       transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;   /* riferimento per il link esteso a tutta la card */
+      cursor: pointer;
     }
     ol.risultati li:hover {
       transform: translateY(-3px);
@@ -63,6 +64,16 @@
     ol.risultati h2 { font-size: 1.15rem; margin: 0 0 .25rem; font-weight: 600; }
     ol.risultati h2 a { color: var(--accento); text-decoration: none; transition: color 0.15s ease; }
     ol.risultati h2 a:hover { color: #084298; text-decoration: underline; }
+    /* il link del titolo si estende su tutta la card: un solo link, cliccabile ovunque */
+    ol.risultati h2 a::after { content: ""; position: absolute; inset: 0; border-radius: 12px; }
+    ol.risultati li:hover h2 a { color: #084298; text-decoration: underline; }
+    ol.risultati h2 a:focus-visible { outline: none; }
+    ol.risultati h2 a:focus-visible::after { outline: 2px solid var(--accento); outline-offset: 2px; }
+    .data {
+      display: inline-block; background-color: #f1f5f9; color: #475569;
+      font-size: 0.82rem; padding: 3px 10px; border-radius: 20px;
+      margin-bottom: .5rem; font-weight: 500;
+    }
     
     .estratto { margin: 0; color: #475569; line-height: 1.5; }
     .estratto em { font-style: normal; background: var(--evidenza); padding: 0 2px; border-radius: 2px; }
@@ -135,7 +146,7 @@
         {% for r in risposta.risultati %}
           <li>
             <h2><a href="{{ r.url }}" target="_blank" rel="noopener">{{ r.titolo }}</a></h2>
-            <div><span style="display: inline-block; background-color: #f1f5f9; color: #64748b; font-size: 0.82rem; padding: 3px 10px; border-radius: 20px; margin-bottom: .5rem; font-weight: 500;">{{ r.data | data_italiana }}</span></div>
+            <div><span class="data">{{ r.data | data_italiana }}</span></div>
             <p class="estratto">{# estratto già sicuro: ricerca.py usa encoder html / html.escape #}{{ r.estratto | safe }}</p>
           </li>
         {% endfor %}
