@@ -34,7 +34,7 @@
     .filtri select, .filtri input {
       padding: .35rem .5rem; border: 1px solid var(--bordo); border-radius: 6px; color: var(--testo);
     }
-    .filtri select { max-width: 16rem; }
+    .filtri input[name=categoria] { width: 16rem; }
     .azzera { font-size: .9rem; color: var(--tenue); }
     .suggerimento { font-size: .8rem; color: var(--tenue); margin: .5rem 0 0; }
     .messaggio { padding: .75rem 1rem; border-radius: 6px; background: var(--sfondo); }
@@ -97,16 +97,12 @@
         </div>
         <div class="filtri">
           <label>Categoria
-            {% if categorie %}
-              <select name="categoria">
-                <option value="">Tutte</option>
-                {% for c in categorie %}
-                  <option value="{{ c }}" {% if c == filtri.categoria %}selected{% endif %}>{{ c }}</option>
-                {% endfor %}
-              </select>
-            {% else %}
-              <input type="text" name="categoria" value="{{ filtri.categoria or '' }}" placeholder="Es. Sport">
-            {% endif %}
+            {# casella con suggerimenti: si scrive "sp" e compare "Sport"; maiuscole indifferenti #}
+            <input type="text" name="categoria" list="elenco-categorie" autocomplete="off"
+                   value="{{ filtri.categoria or '' }}" placeholder="Tutte (scrivi per cercare)">
+            <datalist id="elenco-categorie">
+              {% for c in categorie %}<option value="{{ c }}">{% endfor %}
+            </datalist>
           </label>
           <label>Dal
             <input type="date" name="data_da" value="{{ filtri.data_da or '' }}" min="2004-01-01" max="2025-12-31">

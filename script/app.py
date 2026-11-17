@@ -5,7 +5,7 @@ poi aprire http://127.0.0.1:5000
 
 Il sito non interroga Elasticsearch per la ricerca: chiama solo cerca() di
 ricerca.py (contratto del gruppo). L'unico accesso diretto all'indice serve a
-leggere l'elenco delle categorie per il menu del filtro.
+leggere l'elenco delle categorie suggerite nel filtro.
 """
 
 import math
@@ -27,6 +27,7 @@ MAX_PAGINE = 10000 // RISULTATI_PER_PAGINA
 
 MESI = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio",
         "agosto", "settembre", "ottobre", "novembre", "dicembre"]
+# Formato delle date: il calendario del browser invia sempre AAAA-MM-GG
 FORMATO_DATA = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 app = Flask(__name__)
@@ -34,11 +35,11 @@ _categorie_in_cache = None
 
 
 def elenco_categorie():
-    """Nomi delle categorie presenti nell'indice, in ordine alfabetico.
+    """Nomi delle categorie presenti nell'indice, dalla più usata alla meno usata.
 
     Si leggono una volta sola con un'aggregazione terms sul campo keyword
     'categorie' e si tengono in memoria. Se Elasticsearch non risponde si
-    restituisce una lista vuota: il filtro diventa una casella di testo libero.
+    restituisce una lista vuota: la casella resta, ma senza suggerimenti.
     """
     global _categorie_in_cache
     if _categorie_in_cache is not None:
@@ -50,8 +51,8 @@ def elenco_categorie():
             size=0,
             aggs={"categorie": {"terms": {"field": "categorie", "size": 5000}}},
         )
-        nomi = [b["key"] for b in risposta["aggregations"]["categorie"]["buckets"]]
-        _categorie_in_cache = sorted(nomi, key=str.casefold)
+        # bucket già ordinati per n. di articoli: in cima le più usate (Chrome ne mostra 512)
+        _categorie_in_cache = [b["key"] for b in risposta["aggregations"]["categorie"]["buckets"]]
     except Exception as errore:  # indice assente, Docker spento, credenziali errate
         app.logger.warning("Categorie non disponibili: %s", errore)
         return []
@@ -59,15 +60,36 @@ def elenco_categorie():
 
 
 def leggi_data(valore):
-    """Restituisce la data AAAA-MM-GG se è valida, altrimenti None."""
+    """Restituisce la data AAAA-MM-GG se è valida, altrimenti None.
+
+    Il calendario invia sempre AAAA-MM-GG; il controllo serve se l'indirizzo
+    viene modificato a mano (testo qualsiasi o date impossibili come 2007-04-31).
+    """
     valore = (valore or "").strip()
     if not FORMATO_DATA.match(valore):
         return None
     try:
         date.fromisoformat(valore)
-    except ValueError:  # es. 2007-04-31
+    except ValueError:
         return None
     return valore
+
+
+def leggi_categoria(valore, categorie):
+    """Trova la categoria scritta a mano, senza badare a maiuscole e minuscole.
+
+    Il filtro term di cerca() vuole il nome esatto ("Sport", non "sport").
+    Restituisce (nome esatto o None, True se il nome non esiste).
+    """
+    valore = (valore or "").strip()
+    if not valore:
+        return None, False
+    if not categorie:  # elenco non disponibile: si passa il testo così com'è
+        return valore, False
+    for nome in categorie:
+        if nome.casefold() == valore.casefold():
+            return nome, False
+    return None, True
 
 
 def leggi_pagina(valore):
@@ -93,7 +115,9 @@ def data_italiana(valore):
 @app.route("/")
 def home():
     testo = request.args.get("q", "").strip()
-    categoria = request.args.get("categoria", "").strip() or None
+    categorie = elenco_categorie()
+    categoria_grezza = request.args.get("categoria", "").strip()
+    categoria, categoria_sconosciuta = leggi_categoria(categoria_grezza, categorie)
     data_da_grezza = request.args.get("data_da", "").strip()
     data_a_grezza = request.args.get("data_a", "").strip()
     pagina = leggi_pagina(request.args.get("pagina", 1))
@@ -102,6 +126,8 @@ def home():
     data_a = leggi_data(data_a_grezza)
 
     avvisi = []
+    if categoria_sconosciuta:
+        avvisi.append(f"La categoria «{categoria_grezza}» non esiste ed è stata ignorata.")
     if data_da_grezza and not data_da:
         avvisi.append(f"La data iniziale «{data_da_grezza}» non è valida ed è stata ignorata.")
     if data_a_grezza and not data_a:
@@ -115,7 +141,7 @@ def home():
     contesto = {
         "testo": testo,
         "filtri": filtri,
-        "categorie": elenco_categorie(),
+        "categorie": categorie,
         "avvisi": avvisi,
         "risposta": None,
         "errore": None,
