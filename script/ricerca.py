@@ -61,7 +61,7 @@ def cerca(testo, pagina=1, categoria=None, data_da=None, data_a=None):
         )
     except Exception as e:
         print("Errore Elasticsearch:", e)
-        return {"totale": 0, "risultati": []}
+        raise 
 
 
     risultati = []
