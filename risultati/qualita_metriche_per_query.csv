@@ -1,0 +1,65 @@
+﻿query,configurazione,n_risultati,p5,p10,primo_rilevante
+elezioni politiche italiane,italiano,10,1.0,1.0,1
+elezioni politiche italiane,standard,10,1.0,1.0,1
+elezioni politiche italiane,italiano_titolo2,10,1.0,1.0,1
+elezioni politiche italiane,standard_titolo2,10,1.0,1.0,1
+Brexit Unione Europea,italiano,10,0.2,0.1,1
+Brexit Unione Europea,standard,10,0.2,0.1,1
+Brexit Unione Europea,italiano_titolo2,10,0.2,0.1,4
+Brexit Unione Europea,standard_titolo2,10,0.0,0.0,
+"""governo Berlusconi""",italiano,10,1.0,0.7,1
+"""governo Berlusconi""",standard,10,1.0,0.8,1
+"""governo Berlusconi""",italiano_titolo2,10,1.0,0.7,1
+"""governo Berlusconi""",standard_titolo2,10,1.0,0.8,1
+guerra in Iraq,italiano,10,0.6,0.3,1
+guerra in Iraq,standard,10,0.4,0.3,2
+guerra in Iraq,italiano_titolo2,10,0.6,0.3,1
+guerra in Iraq,standard_titolo2,10,0.6,0.3,3
+Nadal campione del mondo,italiano,10,0.0,0.0,
+Nadal campione del mondo,standard,10,0.0,0.0,
+Nadal campione del mondo,italiano_titolo2,10,0.0,0.0,
+Nadal campione del mondo,standard_titolo2,10,0.0,0.0,
+Italia Mondiali eliminazione,italiano,10,0.0,0.0,
+Italia Mondiali eliminazione,standard,10,0.0,0.0,
+Italia Mondiali eliminazione,italiano_titolo2,10,0.0,0.1,6
+Italia Mondiali eliminazione,standard_titolo2,10,0.0,0.0,
+"""Scuderia Ferrari""",italiano,0,0.0,0.0,
+"""Scuderia Ferrari""",standard,0,0.0,0.0,
+"""Scuderia Ferrari""",italiano_titolo2,0,0.0,0.0,
+"""Scuderia Ferrari""",standard_titolo2,0,0.0,0.0,
+NBA calendario,italiano,10,0.0,0.0,
+NBA calendario,standard,10,0.0,0.0,
+NBA calendario,italiano_titolo2,10,0.0,0.0,
+NBA calendario,standard_titolo2,10,0.0,0.0,
+lancio iPhone Apple,italiano,10,0.4,0.3,1
+lancio iPhone Apple,standard,10,0.4,0.3,1
+lancio iPhone Apple,italiano_titolo2,10,0.4,0.3,1
+lancio iPhone Apple,standard_titolo2,10,0.4,0.3,1
+virus informatico,italiano,10,0.4,0.3,1
+virus informatico,standard,10,0.0,0.1,6
+virus informatico,italiano_titolo2,10,0.0,0.2,8
+virus informatico,standard_titolo2,10,0.0,0.2,7
+"""software libero""",italiano,10,1.0,0.7,1
+"""software libero""",standard,10,1.0,0.7,1
+"""software libero""",italiano_titolo2,10,1.0,0.7,1
+"""software libero""",standard_titolo2,10,1.0,0.7,1
+Microsoft Windows,italiano,10,1.0,0.9,1
+Microsoft Windows,standard,10,1.0,0.9,1
+Microsoft Windows,italiano_titolo2,10,1.0,1.0,1
+Microsoft Windows,standard_titolo2,10,1.0,1.0,1
+debito pubblico italiano,italiano,10,0.8,0.8,1
+debito pubblico italiano,standard,10,0.8,0.8,1
+debito pubblico italiano,italiano_titolo2,10,1.0,0.5,1
+debito pubblico italiano,standard_titolo2,10,1.0,0.5,1
+prodotto interno lordo,italiano,10,0.4,0.2,1
+prodotto interno lordo,standard,10,0.4,0.3,1
+prodotto interno lordo,italiano_titolo2,10,0.2,0.2,4
+prodotto interno lordo,standard_titolo2,10,0.4,0.3,1
+"""mercati azionari""",italiano,9,0.4,0.4,2
+"""mercati azionari""",standard,3,0.0,0.0,
+"""mercati azionari""",italiano_titolo2,9,0.4,0.4,2
+"""mercati azionari""",standard_titolo2,3,0.0,0.0,
+AGCOM,italiano,0,0.0,0.0,
+AGCOM,standard,0,0.0,0.0,
+AGCOM,italiano_titolo2,0,0.0,0.0,
+AGCOM,standard_titolo2,0,0.0,0.0,
