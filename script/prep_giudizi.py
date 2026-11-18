@@ -78,7 +78,8 @@ def cerca_query_test (testo, campi, categoria=None, data_da=None, data_a=None):
         risultati.append({
             "id": hit.get("_id"),
             "titolo": source.get("titolo", ""),
-            "estratto": estratto
+            "estratto": estratto,
+            "url": source.get("url", "")
         })
 
     return risultati
@@ -116,11 +117,11 @@ if __name__ == "__main__":
 
     save_path_2 = "risultati/qualita_giudizi.csv"
     with open(save_path_2, "w", newline="", encoding="utf-8-sig") as csvfile:
-        writer = csv.writer(csvfile, delimiter = ",")
-        writer.writerow(["query", "id_articolo", "titolo", "estratto", "rilevante"])
+        writer = csv.writer(csvfile, delimiter=";")
+        writer.writerow(["query", "id_articolo", "titolo", "estratto", "url", "rilevante"])
         ordinati = sorted(art_unici.items(), key=lambda x: (x[0][0], x [1]["titolo"]))
         for (query, id_articolo), r in ordinati:
-            writer.writerow([query, id_articolo, r["titolo"], r["estratto"].replace("\n", " "), ""])
+            writer.writerow([query, id_articolo, r["titolo"], r["estratto"].replace("\n", " "), r["url"], ""])
 
     print("Righe posizioni:", len(righe_posizioni))
     print("Articoli da giudicare:", len(art_unici))
