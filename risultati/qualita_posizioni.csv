@@ -1,0 +1,545 @@
+﻿query,configurazione,posizione,id_articolo
+elezioni politiche italiane,italiano,1,5043
+elezioni politiche italiane,italiano,2,5447
+elezioni politiche italiane,italiano,3,5461
+elezioni politiche italiane,italiano,4,18682
+elezioni politiche italiane,italiano,5,37016
+elezioni politiche italiane,italiano,6,5239
+elezioni politiche italiane,italiano,7,5053
+elezioni politiche italiane,italiano,8,5096
+elezioni politiche italiane,italiano,9,19825
+elezioni politiche italiane,italiano,10,19897
+elezioni politiche italiane,standard,1,5043
+elezioni politiche italiane,standard,2,5447
+elezioni politiche italiane,standard,3,5461
+elezioni politiche italiane,standard,4,18682
+elezioni politiche italiane,standard,5,37016
+elezioni politiche italiane,standard,6,5239
+elezioni politiche italiane,standard,7,5053
+elezioni politiche italiane,standard,8,5096
+elezioni politiche italiane,standard,9,19897
+elezioni politiche italiane,standard,10,19774
+elezioni politiche italiane,italiano_titolo2,1,5043
+elezioni politiche italiane,italiano_titolo2,2,5447
+elezioni politiche italiane,italiano_titolo2,3,5461
+elezioni politiche italiane,italiano_titolo2,4,18682
+elezioni politiche italiane,italiano_titolo2,5,37016
+elezioni politiche italiane,italiano_titolo2,6,5239
+elezioni politiche italiane,italiano_titolo2,7,5053
+elezioni politiche italiane,italiano_titolo2,8,5096
+elezioni politiche italiane,italiano_titolo2,9,19825
+elezioni politiche italiane,italiano_titolo2,10,19897
+elezioni politiche italiane,standard_titolo2,1,5043
+elezioni politiche italiane,standard_titolo2,2,5447
+elezioni politiche italiane,standard_titolo2,3,5461
+elezioni politiche italiane,standard_titolo2,4,18682
+elezioni politiche italiane,standard_titolo2,5,37016
+elezioni politiche italiane,standard_titolo2,6,5239
+elezioni politiche italiane,standard_titolo2,7,5053
+elezioni politiche italiane,standard_titolo2,8,5096
+elezioni politiche italiane,standard_titolo2,9,19897
+elezioni politiche italiane,standard_titolo2,10,19774
+Brexit Unione Europea,italiano,1,43253
+Brexit Unione Europea,italiano,2,6891
+Brexit Unione Europea,italiano,3,2792
+Brexit Unione Europea,italiano,4,24687
+Brexit Unione Europea,italiano,5,12603
+Brexit Unione Europea,italiano,6,26896
+Brexit Unione Europea,italiano,7,20899
+Brexit Unione Europea,italiano,8,3046
+Brexit Unione Europea,italiano,9,20890
+Brexit Unione Europea,italiano,10,45752
+Brexit Unione Europea,standard,1,43253
+Brexit Unione Europea,standard,2,20899
+Brexit Unione Europea,standard,3,20890
+Brexit Unione Europea,standard,4,3046
+Brexit Unione Europea,standard,5,24841
+Brexit Unione Europea,standard,6,3044
+Brexit Unione Europea,standard,7,18291
+Brexit Unione Europea,standard,8,3087
+Brexit Unione Europea,standard,9,14780
+Brexit Unione Europea,standard,10,24687
+Brexit Unione Europea,italiano_titolo2,1,6891
+Brexit Unione Europea,italiano_titolo2,2,2792
+Brexit Unione Europea,italiano_titolo2,3,24687
+Brexit Unione Europea,italiano_titolo2,4,43253
+Brexit Unione Europea,italiano_titolo2,5,26896
+Brexit Unione Europea,italiano_titolo2,6,20899
+Brexit Unione Europea,italiano_titolo2,7,3046
+Brexit Unione Europea,italiano_titolo2,8,20890
+Brexit Unione Europea,italiano_titolo2,9,45752
+Brexit Unione Europea,italiano_titolo2,10,24841
+Brexit Unione Europea,standard_titolo2,1,20899
+Brexit Unione Europea,standard_titolo2,2,20890
+Brexit Unione Europea,standard_titolo2,3,3046
+Brexit Unione Europea,standard_titolo2,4,24841
+Brexit Unione Europea,standard_titolo2,5,3044
+Brexit Unione Europea,standard_titolo2,6,18291
+Brexit Unione Europea,standard_titolo2,7,14780
+Brexit Unione Europea,standard_titolo2,8,33557
+Brexit Unione Europea,standard_titolo2,9,25526
+Brexit Unione Europea,standard_titolo2,10,5605
+"""governo Berlusconi""",italiano,1,1389
+"""governo Berlusconi""",italiano,2,1400
+"""governo Berlusconi""",italiano,3,20316
+"""governo Berlusconi""",italiano,4,20984
+"""governo Berlusconi""",italiano,5,31254
+"""governo Berlusconi""",italiano,6,19935
+"""governo Berlusconi""",italiano,7,20236
+"""governo Berlusconi""",italiano,8,24875
+"""governo Berlusconi""",italiano,9,51437
+"""governo Berlusconi""",italiano,10,48438
+"""governo Berlusconi""",standard,1,1389
+"""governo Berlusconi""",standard,2,1400
+"""governo Berlusconi""",standard,3,20316
+"""governo Berlusconi""",standard,4,20984
+"""governo Berlusconi""",standard,5,31254
+"""governo Berlusconi""",standard,6,19935
+"""governo Berlusconi""",standard,7,24875
+"""governo Berlusconi""",standard,8,20236
+"""governo Berlusconi""",standard,9,14780
+"""governo Berlusconi""",standard,10,20226
+"""governo Berlusconi""",italiano_titolo2,1,1389
+"""governo Berlusconi""",italiano_titolo2,2,1400
+"""governo Berlusconi""",italiano_titolo2,3,20316
+"""governo Berlusconi""",italiano_titolo2,4,20984
+"""governo Berlusconi""",italiano_titolo2,5,31254
+"""governo Berlusconi""",italiano_titolo2,6,19935
+"""governo Berlusconi""",italiano_titolo2,7,20236
+"""governo Berlusconi""",italiano_titolo2,8,24875
+"""governo Berlusconi""",italiano_titolo2,9,51437
+"""governo Berlusconi""",italiano_titolo2,10,48438
+"""governo Berlusconi""",standard_titolo2,1,1389
+"""governo Berlusconi""",standard_titolo2,2,1400
+"""governo Berlusconi""",standard_titolo2,3,20316
+"""governo Berlusconi""",standard_titolo2,4,20984
+"""governo Berlusconi""",standard_titolo2,5,31254
+"""governo Berlusconi""",standard_titolo2,6,19935
+"""governo Berlusconi""",standard_titolo2,7,24875
+"""governo Berlusconi""",standard_titolo2,8,20236
+"""governo Berlusconi""",standard_titolo2,9,14780
+"""governo Berlusconi""",standard_titolo2,10,20226
+guerra in Iraq,italiano,1,24591
+guerra in Iraq,italiano,2,24458
+guerra in Iraq,italiano,3,22065
+guerra in Iraq,italiano,4,19497
+guerra in Iraq,italiano,5,52450
+guerra in Iraq,italiano,6,8987
+guerra in Iraq,italiano,7,53638
+guerra in Iraq,italiano,8,1449
+guerra in Iraq,italiano,9,8993
+guerra in Iraq,italiano,10,44222
+guerra in Iraq,standard,1,52450
+guerra in Iraq,standard,2,24591
+guerra in Iraq,standard,3,53638
+guerra in Iraq,standard,4,24458
+guerra in Iraq,standard,5,19497
+guerra in Iraq,standard,6,1449
+guerra in Iraq,standard,7,22065
+guerra in Iraq,standard,8,44222
+guerra in Iraq,standard,9,8987
+guerra in Iraq,standard,10,5391
+guerra in Iraq,italiano_titolo2,1,19497
+guerra in Iraq,italiano_titolo2,2,52450
+guerra in Iraq,italiano_titolo2,3,53638
+guerra in Iraq,italiano_titolo2,4,22065
+guerra in Iraq,italiano_titolo2,5,24591
+guerra in Iraq,italiano_titolo2,6,49663
+guerra in Iraq,italiano_titolo2,7,24458
+guerra in Iraq,italiano_titolo2,8,8987
+guerra in Iraq,italiano_titolo2,9,1449
+guerra in Iraq,italiano_titolo2,10,8993
+guerra in Iraq,standard_titolo2,1,52450
+guerra in Iraq,standard_titolo2,2,53638
+guerra in Iraq,standard_titolo2,3,19497
+guerra in Iraq,standard_titolo2,4,22065
+guerra in Iraq,standard_titolo2,5,24591
+guerra in Iraq,standard_titolo2,6,49663
+guerra in Iraq,standard_titolo2,7,24458
+guerra in Iraq,standard_titolo2,8,1449
+guerra in Iraq,standard_titolo2,9,46549
+guerra in Iraq,standard_titolo2,10,44222
+Nadal campione del mondo,italiano,1,33537
+Nadal campione del mondo,italiano,2,52725
+Nadal campione del mondo,italiano,3,51070
+Nadal campione del mondo,italiano,4,14015
+Nadal campione del mondo,italiano,5,6613
+Nadal campione del mondo,italiano,6,24895
+Nadal campione del mondo,italiano,7,2974
+Nadal campione del mondo,italiano,8,8741
+Nadal campione del mondo,italiano,9,35491
+Nadal campione del mondo,italiano,10,23059
+Nadal campione del mondo,standard,1,33537
+Nadal campione del mondo,standard,2,24895
+Nadal campione del mondo,standard,3,52725
+Nadal campione del mondo,standard,4,2974
+Nadal campione del mondo,standard,5,51070
+Nadal campione del mondo,standard,6,6613
+Nadal campione del mondo,standard,7,27773
+Nadal campione del mondo,standard,8,8741
+Nadal campione del mondo,standard,9,33852
+Nadal campione del mondo,standard,10,16594
+Nadal campione del mondo,italiano_titolo2,1,33537
+Nadal campione del mondo,italiano_titolo2,2,52725
+Nadal campione del mondo,italiano_titolo2,3,51070
+Nadal campione del mondo,italiano_titolo2,4,6613
+Nadal campione del mondo,italiano_titolo2,5,24895
+Nadal campione del mondo,italiano_titolo2,6,2974
+Nadal campione del mondo,italiano_titolo2,7,8741
+Nadal campione del mondo,italiano_titolo2,8,33852
+Nadal campione del mondo,italiano_titolo2,9,30648
+Nadal campione del mondo,italiano_titolo2,10,30605
+Nadal campione del mondo,standard_titolo2,1,33537
+Nadal campione del mondo,standard_titolo2,2,24895
+Nadal campione del mondo,standard_titolo2,3,52725
+Nadal campione del mondo,standard_titolo2,4,2974
+Nadal campione del mondo,standard_titolo2,5,51070
+Nadal campione del mondo,standard_titolo2,6,6613
+Nadal campione del mondo,standard_titolo2,7,27773
+Nadal campione del mondo,standard_titolo2,8,8741
+Nadal campione del mondo,standard_titolo2,9,33852
+Nadal campione del mondo,standard_titolo2,10,16594
+Italia Mondiali eliminazione,italiano,1,30999
+Italia Mondiali eliminazione,italiano,2,31026
+Italia Mondiali eliminazione,italiano,3,2634
+Italia Mondiali eliminazione,italiano,4,30988
+Italia Mondiali eliminazione,italiano,5,3438
+Italia Mondiali eliminazione,italiano,6,39427
+Italia Mondiali eliminazione,italiano,7,31046
+Italia Mondiali eliminazione,italiano,8,9306
+Italia Mondiali eliminazione,italiano,9,9067
+Italia Mondiali eliminazione,italiano,10,27957
+Italia Mondiali eliminazione,standard,1,9067
+Italia Mondiali eliminazione,standard,2,9306
+Italia Mondiali eliminazione,standard,3,8945
+Italia Mondiali eliminazione,standard,4,8842
+Italia Mondiali eliminazione,standard,5,6558
+Italia Mondiali eliminazione,standard,6,27957
+Italia Mondiali eliminazione,standard,7,6557
+Italia Mondiali eliminazione,standard,8,4126
+Italia Mondiali eliminazione,standard,9,3207
+Italia Mondiali eliminazione,standard,10,7874
+Italia Mondiali eliminazione,italiano_titolo2,1,27957
+Italia Mondiali eliminazione,italiano_titolo2,2,35148
+Italia Mondiali eliminazione,italiano_titolo2,3,35624
+Italia Mondiali eliminazione,italiano_titolo2,4,6361
+Italia Mondiali eliminazione,italiano_titolo2,5,6199
+Italia Mondiali eliminazione,italiano_titolo2,6,31032
+Italia Mondiali eliminazione,italiano_titolo2,7,6613
+Italia Mondiali eliminazione,italiano_titolo2,8,6200
+Italia Mondiali eliminazione,italiano_titolo2,9,6279
+Italia Mondiali eliminazione,italiano_titolo2,10,13804
+Italia Mondiali eliminazione,standard_titolo2,1,27957
+Italia Mondiali eliminazione,standard_titolo2,2,6361
+Italia Mondiali eliminazione,standard_titolo2,3,6328
+Italia Mondiali eliminazione,standard_titolo2,4,6279
+Italia Mondiali eliminazione,standard_titolo2,5,6237
+Italia Mondiali eliminazione,standard_titolo2,6,6558
+Italia Mondiali eliminazione,standard_titolo2,7,29499
+Italia Mondiali eliminazione,standard_titolo2,8,6527
+Italia Mondiali eliminazione,standard_titolo2,9,6212
+Italia Mondiali eliminazione,standard_titolo2,10,29480
+NBA calendario,italiano,1,49289
+NBA calendario,italiano,2,50239
+NBA calendario,italiano,3,52046
+NBA calendario,italiano,4,49195
+NBA calendario,italiano,5,49025
+NBA calendario,italiano,6,49182
+NBA calendario,italiano,7,50405
+NBA calendario,italiano,8,49125
+NBA calendario,italiano,9,49059
+NBA calendario,italiano,10,49100
+NBA calendario,standard,1,50239
+NBA calendario,standard,2,52046
+NBA calendario,standard,3,49195
+NBA calendario,standard,4,49025
+NBA calendario,standard,5,49182
+NBA calendario,standard,6,49289
+NBA calendario,standard,7,50405
+NBA calendario,standard,8,49125
+NBA calendario,standard,9,49100
+NBA calendario,standard,10,49059
+NBA calendario,italiano_titolo2,1,50239
+NBA calendario,italiano_titolo2,2,52046
+NBA calendario,italiano_titolo2,3,49195
+NBA calendario,italiano_titolo2,4,49289
+NBA calendario,italiano_titolo2,5,49025
+NBA calendario,italiano_titolo2,6,49182
+NBA calendario,italiano_titolo2,7,50405
+NBA calendario,italiano_titolo2,8,49125
+NBA calendario,italiano_titolo2,9,49059
+NBA calendario,italiano_titolo2,10,49100
+NBA calendario,standard_titolo2,1,52046
+NBA calendario,standard_titolo2,2,49195
+NBA calendario,standard_titolo2,3,50239
+NBA calendario,standard_titolo2,4,49025
+NBA calendario,standard_titolo2,5,49182
+NBA calendario,standard_titolo2,6,49289
+NBA calendario,standard_titolo2,7,50405
+NBA calendario,standard_titolo2,8,49125
+NBA calendario,standard_titolo2,9,49100
+NBA calendario,standard_titolo2,10,49059
+lancio iPhone Apple,italiano,1,13998
+lancio iPhone Apple,italiano,2,28635
+lancio iPhone Apple,italiano,3,28632
+lancio iPhone Apple,italiano,4,46829
+lancio iPhone Apple,italiano,5,13229
+lancio iPhone Apple,italiano,6,16088
+lancio iPhone Apple,italiano,7,43193
+lancio iPhone Apple,italiano,8,45241
+lancio iPhone Apple,italiano,9,31735
+lancio iPhone Apple,italiano,10,15861
+lancio iPhone Apple,standard,1,28632
+lancio iPhone Apple,standard,2,28635
+lancio iPhone Apple,standard,3,13998
+lancio iPhone Apple,standard,4,46829
+lancio iPhone Apple,standard,5,16088
+lancio iPhone Apple,standard,6,43193
+lancio iPhone Apple,standard,7,13229
+lancio iPhone Apple,standard,8,45241
+lancio iPhone Apple,standard,9,31735
+lancio iPhone Apple,standard,10,15861
+lancio iPhone Apple,italiano_titolo2,1,13998
+lancio iPhone Apple,italiano_titolo2,2,28635
+lancio iPhone Apple,italiano_titolo2,3,28632
+lancio iPhone Apple,italiano_titolo2,4,1628
+lancio iPhone Apple,italiano_titolo2,5,46829
+lancio iPhone Apple,italiano_titolo2,6,13229
+lancio iPhone Apple,italiano_titolo2,7,16088
+lancio iPhone Apple,italiano_titolo2,8,43193
+lancio iPhone Apple,italiano_titolo2,9,45241
+lancio iPhone Apple,italiano_titolo2,10,49724
+lancio iPhone Apple,standard_titolo2,1,28632
+lancio iPhone Apple,standard_titolo2,2,28635
+lancio iPhone Apple,standard_titolo2,3,13998
+lancio iPhone Apple,standard_titolo2,4,1628
+lancio iPhone Apple,standard_titolo2,5,46829
+lancio iPhone Apple,standard_titolo2,6,16088
+lancio iPhone Apple,standard_titolo2,7,43193
+lancio iPhone Apple,standard_titolo2,8,13229
+lancio iPhone Apple,standard_titolo2,9,1296
+lancio iPhone Apple,standard_titolo2,10,2553
+virus informatico,italiano,1,4592
+virus informatico,italiano,2,20740
+virus informatico,italiano,3,1268
+virus informatico,italiano,4,15853
+virus informatico,italiano,5,7784
+virus informatico,italiano,6,1253
+virus informatico,italiano,7,7655
+virus informatico,italiano,8,7707
+virus informatico,italiano,9,43663
+virus informatico,italiano,10,5955
+virus informatico,standard,1,15853
+virus informatico,standard,2,49437
+virus informatico,standard,3,1253
+virus informatico,standard,4,1268
+virus informatico,standard,5,12385
+virus informatico,standard,6,7707
+virus informatico,standard,7,7655
+virus informatico,standard,8,43663
+virus informatico,standard,9,5955
+virus informatico,standard,10,40456
+virus informatico,italiano_titolo2,1,1268
+virus informatico,italiano_titolo2,2,7784
+virus informatico,italiano_titolo2,3,49437
+virus informatico,italiano_titolo2,4,31825
+virus informatico,italiano_titolo2,5,1253
+virus informatico,italiano_titolo2,6,15853
+virus informatico,italiano_titolo2,7,11233
+virus informatico,italiano_titolo2,8,4592
+virus informatico,italiano_titolo2,9,44703
+virus informatico,italiano_titolo2,10,43663
+virus informatico,standard_titolo2,1,1268
+virus informatico,standard_titolo2,2,31825
+virus informatico,standard_titolo2,3,1253
+virus informatico,standard_titolo2,4,49437
+virus informatico,standard_titolo2,5,15853
+virus informatico,standard_titolo2,6,11233
+virus informatico,standard_titolo2,7,44703
+virus informatico,standard_titolo2,8,43663
+virus informatico,standard_titolo2,9,12385
+virus informatico,standard_titolo2,10,7707
+"""software libero""",italiano,1,13468
+"""software libero""",italiano,2,19494
+"""software libero""",italiano,3,17634
+"""software libero""",italiano,4,15519
+"""software libero""",italiano,5,15237
+"""software libero""",italiano,6,13187
+"""software libero""",italiano,7,14944
+"""software libero""",italiano,8,1419
+"""software libero""",italiano,9,16776
+"""software libero""",italiano,10,18377
+"""software libero""",standard,1,19494
+"""software libero""",standard,2,13468
+"""software libero""",standard,3,17634
+"""software libero""",standard,4,15519
+"""software libero""",standard,5,15237
+"""software libero""",standard,6,14944
+"""software libero""",standard,7,13187
+"""software libero""",standard,8,16776
+"""software libero""",standard,9,1419
+"""software libero""",standard,10,18377
+"""software libero""",italiano_titolo2,1,13468
+"""software libero""",italiano_titolo2,2,19494
+"""software libero""",italiano_titolo2,3,17634
+"""software libero""",italiano_titolo2,4,15519
+"""software libero""",italiano_titolo2,5,15237
+"""software libero""",italiano_titolo2,6,13187
+"""software libero""",italiano_titolo2,7,14944
+"""software libero""",italiano_titolo2,8,1419
+"""software libero""",italiano_titolo2,9,16776
+"""software libero""",italiano_titolo2,10,18377
+"""software libero""",standard_titolo2,1,19494
+"""software libero""",standard_titolo2,2,13468
+"""software libero""",standard_titolo2,3,17634
+"""software libero""",standard_titolo2,4,15519
+"""software libero""",standard_titolo2,5,15237
+"""software libero""",standard_titolo2,6,14944
+"""software libero""",standard_titolo2,7,13187
+"""software libero""",standard_titolo2,8,16776
+"""software libero""",standard_titolo2,9,1419
+"""software libero""",standard_titolo2,10,18377
+Microsoft Windows,italiano,1,45118
+Microsoft Windows,italiano,2,16157
+Microsoft Windows,italiano,3,15275
+Microsoft Windows,italiano,4,17543
+Microsoft Windows,italiano,5,15729
+Microsoft Windows,italiano,6,11381
+Microsoft Windows,italiano,7,11210
+Microsoft Windows,italiano,8,11410
+Microsoft Windows,italiano,9,1628
+Microsoft Windows,italiano,10,5182
+Microsoft Windows,standard,1,45118
+Microsoft Windows,standard,2,15729
+Microsoft Windows,standard,3,16157
+Microsoft Windows,standard,4,15275
+Microsoft Windows,standard,5,17543
+Microsoft Windows,standard,6,11381
+Microsoft Windows,standard,7,11210
+Microsoft Windows,standard,8,11410
+Microsoft Windows,standard,9,1628
+Microsoft Windows,standard,10,5182
+Microsoft Windows,italiano_titolo2,1,15729
+Microsoft Windows,italiano_titolo2,2,17543
+Microsoft Windows,italiano_titolo2,3,11210
+Microsoft Windows,italiano_titolo2,4,45118
+Microsoft Windows,italiano_titolo2,5,16157
+Microsoft Windows,italiano_titolo2,6,15275
+Microsoft Windows,italiano_titolo2,7,11381
+Microsoft Windows,italiano_titolo2,8,15558
+Microsoft Windows,italiano_titolo2,9,12470
+Microsoft Windows,italiano_titolo2,10,6839
+Microsoft Windows,standard_titolo2,1,15729
+Microsoft Windows,standard_titolo2,2,17543
+Microsoft Windows,standard_titolo2,3,11210
+Microsoft Windows,standard_titolo2,4,45118
+Microsoft Windows,standard_titolo2,5,16157
+Microsoft Windows,standard_titolo2,6,15275
+Microsoft Windows,standard_titolo2,7,11381
+Microsoft Windows,standard_titolo2,8,15558
+Microsoft Windows,standard_titolo2,9,12470
+Microsoft Windows,standard_titolo2,10,11410
+debito pubblico italiano,italiano,1,53533
+debito pubblico italiano,italiano,2,39835
+debito pubblico italiano,italiano,3,3717
+debito pubblico italiano,italiano,4,3151
+debito pubblico italiano,italiano,5,2891
+debito pubblico italiano,italiano,6,25273
+debito pubblico italiano,italiano,7,18271
+debito pubblico italiano,italiano,8,53147
+debito pubblico italiano,italiano,9,39324
+debito pubblico italiano,italiano,10,2521
+debito pubblico italiano,standard,1,53533
+debito pubblico italiano,standard,2,3717
+debito pubblico italiano,standard,3,3151
+debito pubblico italiano,standard,4,39835
+debito pubblico italiano,standard,5,2891
+debito pubblico italiano,standard,6,39324
+debito pubblico italiano,standard,7,25273
+debito pubblico italiano,standard,8,18271
+debito pubblico italiano,standard,9,2521
+debito pubblico italiano,standard,10,46838
+debito pubblico italiano,italiano_titolo2,1,53533
+debito pubblico italiano,italiano_titolo2,2,3717
+debito pubblico italiano,italiano_titolo2,3,3151
+debito pubblico italiano,italiano_titolo2,4,2891
+debito pubblico italiano,italiano_titolo2,5,25273
+debito pubblico italiano,italiano_titolo2,6,52786
+debito pubblico italiano,italiano_titolo2,7,50925
+debito pubblico italiano,italiano_titolo2,8,49173
+debito pubblico italiano,italiano_titolo2,9,39835
+debito pubblico italiano,italiano_titolo2,10,4593
+debito pubblico italiano,standard_titolo2,1,53533
+debito pubblico italiano,standard_titolo2,2,3717
+debito pubblico italiano,standard_titolo2,3,3151
+debito pubblico italiano,standard_titolo2,4,2891
+debito pubblico italiano,standard_titolo2,5,25273
+debito pubblico italiano,standard_titolo2,6,50925
+debito pubblico italiano,standard_titolo2,7,52786
+debito pubblico italiano,standard_titolo2,8,47783
+debito pubblico italiano,standard_titolo2,9,39835
+debito pubblico italiano,standard_titolo2,10,48713
+prodotto interno lordo,italiano,1,25913
+prodotto interno lordo,italiano,2,24875
+prodotto interno lordo,italiano,3,24571
+prodotto interno lordo,italiano,4,25100
+prodotto interno lordo,italiano,5,50196
+prodotto interno lordo,italiano,6,18271
+prodotto interno lordo,italiano,7,14748
+prodotto interno lordo,italiano,8,49288
+prodotto interno lordo,italiano,9,13122
+prodotto interno lordo,italiano,10,17413
+prodotto interno lordo,standard,1,25913
+prodotto interno lordo,standard,2,24875
+prodotto interno lordo,standard,3,24571
+prodotto interno lordo,standard,4,25100
+prodotto interno lordo,standard,5,50196
+prodotto interno lordo,standard,6,18271
+prodotto interno lordo,standard,7,49288
+prodotto interno lordo,standard,8,21059
+prodotto interno lordo,standard,9,17959
+prodotto interno lordo,standard,10,16553
+prodotto interno lordo,italiano_titolo2,1,49288
+prodotto interno lordo,italiano_titolo2,2,13122
+prodotto interno lordo,italiano_titolo2,3,17413
+prodotto interno lordo,italiano_titolo2,4,25913
+prodotto interno lordo,italiano_titolo2,5,48251
+prodotto interno lordo,italiano_titolo2,6,45241
+prodotto interno lordo,italiano_titolo2,7,24875
+prodotto interno lordo,italiano_titolo2,8,26891
+prodotto interno lordo,italiano_titolo2,9,24571
+prodotto interno lordo,italiano_titolo2,10,44754
+prodotto interno lordo,standard_titolo2,1,25913
+prodotto interno lordo,standard_titolo2,2,49288
+prodotto interno lordo,standard_titolo2,3,24875
+prodotto interno lordo,standard_titolo2,4,24571
+prodotto interno lordo,standard_titolo2,5,36625
+prodotto interno lordo,standard_titolo2,6,25100
+prodotto interno lordo,standard_titolo2,7,50196
+prodotto interno lordo,standard_titolo2,8,18271
+prodotto interno lordo,standard_titolo2,9,21059
+prodotto interno lordo,standard_titolo2,10,17959
+"""mercati azionari""",italiano,1,15321
+"""mercati azionari""",italiano,2,2267
+"""mercati azionari""",italiano,3,4221
+"""mercati azionari""",italiano,4,25740
+"""mercati azionari""",italiano,5,2241
+"""mercati azionari""",italiano,6,6689
+"""mercati azionari""",italiano,7,15740
+"""mercati azionari""",italiano,8,39835
+"""mercati azionari""",italiano,9,13749
+"""mercati azionari""",standard,1,15321
+"""mercati azionari""",standard,2,25740
+"""mercati azionari""",standard,3,2241
+"""mercati azionari""",italiano_titolo2,1,15321
+"""mercati azionari""",italiano_titolo2,2,2267
+"""mercati azionari""",italiano_titolo2,3,4221
+"""mercati azionari""",italiano_titolo2,4,25740
+"""mercati azionari""",italiano_titolo2,5,2241
+"""mercati azionari""",italiano_titolo2,6,6689
+"""mercati azionari""",italiano_titolo2,7,15740
+"""mercati azionari""",italiano_titolo2,8,39835
+"""mercati azionari""",italiano_titolo2,9,13749
+"""mercati azionari""",standard_titolo2,1,15321
+"""mercati azionari""",standard_titolo2,2,25740
+"""mercati azionari""",standard_titolo2,3,2241
