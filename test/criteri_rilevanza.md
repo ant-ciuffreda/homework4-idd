@@ -45,6 +45,6 @@ Il giudizio è binario: sì / no. Nessun "parzialmente".
 
 ## Limiti dichiarati
 
-- Giudizi di una sola persona: possono essere soggettivi.
+- Giudizi di due membri del gruppo: possono essere soggettivi.
 - 16 query, 4 per argomento (politica, sport, informatica, economia): per ogni argomento 2 query normali senza filtri, 1 frase tra virgolette e 1 query normale con un filtro (categoria o data). Con 16 query le differenze tra configurazioni sono indicative, non statisticamente solide.
 - Si valutano solo i primi 10 risultati: non si misura quanti articoli rilevanti il sistema non trova.
